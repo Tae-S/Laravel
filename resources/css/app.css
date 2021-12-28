@@ -1,0 +1,244 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    color:#26474E;
+}
+
+body{
+    min-height:100vh;
+    /*background:linear-gradient(30deg, #dc115c, #6811ff);*/
+    background:linear-gradient(45deg,#F5BFD2,#E5DB9C,#D0BCAC,#BEB4C5);
+    color:#E6A57E;
+
+}
+
+.nav-ul{
+    display: flex;
+    flex-direction: row;
+
+    padding: 10px 0 10px 0;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.2);
+    box-shadow: #a0aec0 1px 1px 5px 1px;
+}
+
+
+/*
+Azalea #F5BFD2
+‍Jungle Mist #E5DB9C
+‍Zombie #D0BCAC
+‍Chatelle #BEB4C5
+‍Tonys Pink #E6A57E
+*/
+
+.nav-li{
+
+
+    list-style-type: none;
+    margin:0 30px 0 0;
+    padding:5px;
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+
+}
+
+.nav-li:hover a{
+    color: #397a81;
+}
+
+.nav-li:hover a:after{
+    left:0;
+}
+
+.nav-li > a{
+    text-decoration: none;
+    color:#26474E;
+    font-size:1.3rem;
+    letter-spacing:1px;
+    transition: color 0.3s;
+    position:relative;
+}
+
+.nav-li > a:after{
+    content:"";
+    position:absolute;
+    top:110%;
+    left:-110%;
+    width:100%;
+    height:1px;
+    background: #42939a;
+    transition: left 0.5s;
+}
+
+
+.page-container{
+    margin-top:30px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.heading{
+    border-bottom:1px solid #26474E;
+}
+
+.employees-list-container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width:70%;
+    overflow:hidden;
+}
+
+.companies-list-container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width:70%;
+    overflow:hidden;
+}
+
+.companies-list{
+
+    /*border:1px solid black;*/
+}
+
+.btn-container{
+    margin:10px 30px 30px 0px;
+
+}
+.top-btn{
+    margin-left:38%;
+}
+
+.btn{
+    outline:none;
+    border:none;
+    cursor:pointer;
+    text-decoration: none;
+    margin:10px 10px 10px 10px;
+    background-color: #2e54ff;
+    color:white;
+    letter-spacing:1px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding:10px 20px 10px 20px;
+    transition:all 0.3s;
+}
+
+.btn:hover{
+    background-color: #2029ff;
+    color: #a2a2a2;
+}
+
+.company-logo{
+    width:100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: inline;
+}
+.company-logo-p{
+    margin:5px 0 5px 5px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.employee-username,.company-name{
+    font-size:1.1rem;
+    letter-spacing: 1px;
+}
+
+.employee-amount,.employee-parent,.company-status,.company-email,{
+    margin:5px 0 5px 5px;
+}
+
+
+
+.employee-static-field,.company-static-field{
+    color: #8e6d78;
+}
+
+hr{
+    width:200%;
+    margin-bottom:10px;
+}
+
+.employee-form{
+    display:flex;
+    flex-direction: column;
+}
+
+.company-form{
+    display:flex;
+    flex-direction: column;
+}
+
+.employee-form > input{
+    margin-top:30px;
+    padding:5px 1px;
+    border:none;
+    outline:none;
+    border-radius:2px;
+}
+
+.company-form > input{
+    margin-top:30px;
+    padding:5px 1px;
+    border:none;
+    outline:none;
+    border-radius:2px;
+}
+
+.employee-form>input:last-child{
+    margin-bottom:30px;
+}
+
+.company-form>input:last-child{
+    margin-bottom:30px;
+}
+
+.affiliate-code-container{
+    margin-top:20px;
+    width:70%;
+    border:1px solid black;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.affiliate-code{
+    margin-bottom:10px;
+}
+
+/*
+.create-car-container{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+.form{
+    display:flex;
+    flex-direction: column;
+}
+
+.form > input{
+    margin-top:30px;
+    padding:5px 1px;
+    border:none;
+    outline:none;
+    border-radius:2px;
+}
+
+.form>input:last-child{
+    margin-bottom:30px;
+}
+*/
